@@ -3,11 +3,7 @@ public class FizzBuzz {
 
         // See Learn the Part for detailed instructions.
         for (int i = 0; i < 19; i++){
-            
-            if(i == 0){
-                System.out.println(i + " FizzBuzz");
-            }
-            else if((i % 3 == 0) && (i % 5 == 0)){
+             if((i % 3 == 0) && (i % 5 == 0)){
                 System.out.println(i + " FizzBuzz");
             }else if(i % 5 == 0){
                 System.out.println(i + " Buzz");
