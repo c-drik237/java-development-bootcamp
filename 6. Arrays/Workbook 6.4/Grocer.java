@@ -10,11 +10,14 @@ public class Grocer {
         String[] store = {"apples", "bananas", "candy", "chocolate", "coffee", "tea"};
         System.out.println("\nWelcome to Java Grocers. ");
         System.out.println("What can I help you find?\n");
-        
+        String res = scan.nextLine();
         for (int i = 0; i < store.length; i++) {
+            if (res.equals(store[i])){
+                // Task 2 here
+                System.out.println("\nWe have that in aisle: " + i);
+                break;
+            }
             
-            // Task 2 here
-            System.out.println("\nWe have that in aisle: <index>");
 
 
         }
