@@ -31,9 +31,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String status = "continue";
         while (status.equals("continue")) {
+            System.out.print("\nPlease choose an integer between 0 - 9: ");
+            int choice = scanner.nextInt();
+            Movie userMovie = store.getMovie(choice);
+            System.out.print("Set a new rating for " + userMovie.getName() + ": ");
+            double userRating = scanner.nextDouble();
+            userMovie.setRating(userRating);
+            store.setMovie(choice, userMovie);
+            printStore();
             System.out.print("To edit another rating, type: 'continue': ");
             status = scanner.next();
-        }
+            }
         scanner.close();
     }
 
