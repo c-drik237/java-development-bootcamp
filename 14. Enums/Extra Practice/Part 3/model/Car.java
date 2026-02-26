@@ -15,10 +15,10 @@ public class Car {
         SEDAN, COUPE, HATCHBACK, SUV, TRUCK, VAN
     }
 
-    public Car(String make, String model, BodyType bodyType, int productionYear, double price) {
+    public Car(String make, String model, BodyType sedan, int productionYear, double price) {
         setMake(make);
         setModel(model);
-        setBodyType(bodyType);
+        setBodyType(sedan);
         setProductionYear(productionYear);
         setPrice(price);
     }
